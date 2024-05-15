@@ -3,8 +3,49 @@
 //Part 1: Thinking Functionally
 
 // #1 - Take an array of numbers and return the sum.
+
+const berryRandom = [4,8,16,88,94,104,6349].reduce((partialSum, Q)=>partialSum + Q, 0);
+console.log(berryRandom);
+
+
+
+const yourSumMyLiege = [4,8,16,88,94,104,6349].reduce(add, 0);
+
+function add(summerator, Q) {
+  return summerator +Q;
+}
+
+console.log("Your SUM, my liege (while genuflecting): ",yourSumMyLiege);
+
+
+
+let arr = [4,8,16,88,94,104,6349];
+let total = 0;
+for (let Q in arr) {
+  total += arr[Q];
+}
+console.log(total)
+
+
 // #2 - Take an array of numbers and return the average.
-// #3 - ake an array of strings and return the longest string.
+let aria = [4,8,16,88,94,104,6349];
+let avg = 0;
+let length = aria.length;
+for (let G in aria) {
+    avg += aria[G]/length;
+}
+console.log("Your AVG, my liege: ",avg)
+
+
+// #3 - Take an array of strings and return the longest string.
+let lostFamily = ['freddie', 'rowie', 'ernie', 'elsie', 'richard', 'charlotte']
+let lengthy = lostFamily.length
+
+function stringReturn (longestString) {
+    let longestString=lengthy;
+    return longestString;
+}
+console.log(longestString)
 // #4 - Take an array of strings, and a number and return an array of the strings that are longer than the given number. 
 // For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3); would return ["hello", "morning"].
 // Take a number, n, and print every number between 1 and n without using loops. Use recursion.
